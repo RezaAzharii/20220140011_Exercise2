@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+        <div class="image-post">
+            <div class="image">
+            <img src="./aset/ft1.jpeg" alt="Sabar" id="image1" >
+        </div>
+
+        <div class="vidio-player">
+            <video autoplay muted loop preload="auto">
+                <source src="./aset/NJVID.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="button-container">
+            <a href="survey.html" class="button">Survey</a>
+            <button id="mute-button" ><i class="fas fa-solid fa-music"></i></button>
+        </div>
+
+        <div class="music-player">
+            <audio autoplay loop controls class="bgm" id="background-music">
+                <source src="./aset/TheBlend.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+    <script>
+        var audio = document.getElementById("myAudio");
+
+        function playAudio() {
+          audio.play();
+        }
+      
+        function pauseAudio() {
+          audio.pause();
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

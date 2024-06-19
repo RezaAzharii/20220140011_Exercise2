@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Peminatan</title>
+  <link rel="stylesheet" href="surstyle.css">
+</head>
+<body>
+  <section class="container">
+    <header>Pembelian Tiket</header>
+    <form action="#" class="form" id="pendaftaranForm">
+      <div class="input-box">
+        <label>Nama</label>
+        <input type="text" placeholder="Masukan Nama Lengkap" id="nama">
+      </div>
+      <div class="input-box">
+        <label>Jumlah</label>
+        <input type="text" placeholder="Masukan Jumlah" id="jumlah">
+      </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Tahun</label>
+          <div class="select-box">
+            <select class="pilihan" id="tahun">
+              <option value="">Tahun</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box">
+          <label>Tanggal</label>
+          <input type="date" id="tanggal">
+        </div>
+      </div>
+
+      <div class="penjurusan-box">
+        <h3>Grade :</h3>
+        <div class="Grade-option">
+          <div class="Grade">
+            <input type="radio" id="check-VIP" name="Grade" value="VIP">
+            <label for="VIP">VIP</label>
+          </div>
+          <div class="Grade">
+            <input type="radio" id="check-VIP+" name="Grade" value="VIP+">
+            <label for="check-desain">VIP+</label>
+          </div>
+          <div class="Grade">
+            <input type="radio" id="check-VVIP" name="Grade" value="VVIP">
+            <label for="check-jaringan">VVIP</label>
+          </div>
+          <div class="Grade">
+            <input type="radio" id="check-Friends" name="Grade" value="Friends">
+            <label for="check-data">Friends</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <label>Alamat</label>
+        <input type="text" placeholder="Masukan Alamat Anda" id="alamat">
+      </div>
+
+      <button type="submit" onclick="SubmitData()">Submit</button>
+    </form>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
